@@ -1,11 +1,22 @@
-import AuthLayout from "./components/layout/AuthLayout"
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import AuthLayout from "@/components/layout/AuthLayout";
+import Login from "@/pages/login";
+
+const router = createBrowserRouter([
+    {
+        element: <AuthLayout />,
+        children: [
+            {
+                path: "/",
+                element: <Login />,
+            },
+        ],
+    },
+]);
 
 function App() {
-  return (
-      <>
-      <AuthLayout/>
-      </>
-  )
+    return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;
