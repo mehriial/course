@@ -1,0 +1,153 @@
+
+import type { RegisterPageProps } from "@/types/auth";
+
+export const registerPageContent: RegisterPageProps = {
+    student: {
+        title: "Şagird qeydiyyatı",
+        description: "Bütün xanalar məcburidir.",
+        registerText: "Qeydiyyatdan keç",
+        fields: [
+            {
+                id: "name",
+                label: "Ad, soyad",
+                placeholder: "Ad, soyad",
+                type: "text",
+                col: 12,
+            },
+            {
+                id: "parent_name",
+                label: "Valideyn adı",
+                placeholder: "Valideyn adı",
+                type: "text",
+                col: 6,
+            },
+            {
+                id: "city",
+                label: "Şəhər",
+                placeholder: "Şəhərinizi daxil edin",
+                type: "text",
+                col: 6,
+            },
+            {
+                id: "phone",
+                label: "Telefon",
+                placeholder: "+994 XX XXX XX XX",
+                type: "tel",
+                col: 6,
+            },
+            {
+                id: "email",
+                label: "E-mail",
+                placeholder: "example@gmail.com",
+                type: "email",
+                col: 6,
+            },
+            {
+                id: "grade",
+                label: "Sinif",
+                placeholder: "Sinif seçin",
+                type: "select",
+                options: [
+                    { label: "5-ci sinif", value: "5" },
+                    { label: "6-cı sinif", value: "6" },
+                    { label: "7-ci sinif", value: "7" },
+                    { label: "8-ci sinif", value: "8" },
+                    { label: "9-cu sinif", value: "9" },
+                    { label: "10-cu sinif", value: "10" },
+                    { label: "11-ci sinif", value: "11" },
+                ],
+                col: 6,
+            },
+            {
+                id: "time",
+                label: "Dərs vaxtı",
+                placeholder: "Dərs vaxtını seçin",
+                type: "date-time",
+                col: 6,
+            },
+            {
+                id: "password",
+                type: "password",
+                label: "Şifrə",
+                col: 6,
+            },
+            {
+                id: "password_confirmation",
+                type: "password",
+                label: "Şifrənin təkrarı",
+                col: 6,
+            },
+        ],
+    },
+
+    teacher: {
+        title: "Müəllim qeydiyyatı",
+        description: "Bütün xanalar məcburidir.",
+        registerText: "Qeydiyyatdan keç",
+        fields: [
+            {
+                id: "name",
+                label: "Ad, soyad",
+                placeholder: "Ad, soyad",
+                type: "text",
+                col: 12,
+            },
+            {
+                id: "city",
+                label: "Şəhər",
+                placeholder: "Şəhərinizi daxil edin",
+                type: "text",
+                col: 6,
+            },
+            {
+                id: "phone",
+                label: "Telefon",
+                placeholder: "+994 XX XXX XX XX",
+                type: "tel",
+                col: 6,
+            },
+            {
+                id: "email",
+                label: "E-mail",
+                placeholder: "example@gmail.com",
+                type: "email",
+                col: 6,
+            },
+            {
+                id: "grade",
+                label: "Dərs dediyi sinif",
+                placeholder: "Sinif seçin",
+                type: "select",
+                options: [
+                    { label: "5-ci sinif", value: "5" },
+                    { label: "6-cı sinif", value: "6" },
+                    { label: "7-ci sinif", value: "7" },
+                    { label: "8-ci sinif", value: "8" },
+                    { label: "9-cu sinif", value: "9" },
+                    { label: "10-cu sinif", value: "10" },
+                    { label: "11-ci sinif", value: "11" },
+                ],
+                col: 6,
+            },
+            {
+                id: "time",
+                label: "Dərs vaxtı",
+                placeholder: "Dərs vaxtını seçin",
+                type: "date-time",
+                col: 6,
+            },
+            {
+                id: "password",
+                label: "Şifrə",
+                type: "password",
+                col: 6,
+            },
+            {
+                id: "password_confirmation",
+                label: "Şifrənin təkrarı",
+                type: "password",
+                col: 6,
+            },
+        ],
+    },
+};

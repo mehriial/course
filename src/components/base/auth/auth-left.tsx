@@ -3,7 +3,7 @@ import type { AuthLeftProps } from "../../../types/auth";
 function AuthLeft({ title, description, features }: AuthLeftProps) {
     return (
         <>
-            <h2 className="text-5xl font-bold my-4 text-txt-200 pr-8">
+            <h2 className="text-4xl font-bold my-4 text-txt-200 pr-8">
                 {title}
             </h2>
 

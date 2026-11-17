@@ -6,7 +6,7 @@ export default function AuthTabs({
     setRole
 }: AuthTabsProps) {
     return (
-        <div>
+        <>
             <Tabs
                 value={role}
                 onValueChange={(value) =>
@@ -30,6 +30,6 @@ export default function AuthTabs({
                     </TabsTrigger>
                 </TabsList>
             </Tabs>
-        </div>
+        </>
     )
 }

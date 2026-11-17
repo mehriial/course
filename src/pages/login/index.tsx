@@ -8,7 +8,7 @@ import { Label } from "@/components/ui/label";
 
 import { loginContent, loginPageContent } from "@/data/auth-data";
 import type { AuthContext } from "@/types/auth";
-import AuthTabs from "@/components/common/auth-tabs";
+import AuthTabs from "@/components/base/auth/auth-tabs";
 import { Checkbox } from "@/components/ui/checkbox";
 import PasswordInput from "@/components/common/password-input";
 
@@ -36,7 +36,7 @@ function Login() {
                     {content.title}
                 </h2>
 
-                <p className="text-muted-foreground mt-2">
+                <p className="text-muted-foreground mt-2 font-medium">
                     {content.description}
                 </p>
             </div>
@@ -54,13 +54,16 @@ function Login() {
                     />
                 </div>
 
-                <PasswordInput
-                    id="password"
-                    label={content.passwordLabel}
-                    placeholder={content.passwordPlaceholder}
-                    required
-                />
-
+                <div className="space-y-2">
+                    <Label htmlFor="password">
+                        {content.passwordLabel}
+                    </Label>
+                    <PasswordInput
+                        id="password"
+                        placeholder={content.passwordPlaceholder}
+                        required
+                    />
+                </div>
                 <div className="flex justify-between">
                     <div className="flex items-center gap-2">
                         <Checkbox
@@ -78,7 +81,7 @@ function Login() {
                     </Link>
                 </div>
 
-                <Button type="submit" className="w-full" variant='default'>
+                <Button type="submit" className="w-full" variant='default' size='lg'>
                     Daxil ol
                 </Button>
             </form>
